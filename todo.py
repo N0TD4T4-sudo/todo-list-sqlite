@@ -39,9 +39,14 @@ while True:
     4. Editar tarea
     5. Borrar tarea
     6. Salir """)
-    option = int(input("\n"))
-    if not isinstance(option,int):
-        print("Error , Introduzca un numero de las opciones")
+    try:
+        option = int(input("\n"))
+    except ValueError:
+        print("eso no es un numero")
+        continue
+    if option > 6 or option < 1:
+        print("El numero no se encuentra dentro de las opciones")
+        continue
     else:
         if option == 1 :
             agregar_tarea()
