@@ -1,0 +1,18 @@
+<body style="background-color:#0A0A0A;">
+<h1 style="color:#39FF14;">Mis tareas </h1>
+<form method="post">
+    <input name="Agregar">
+    <button>Enviar</button>
+</form>
+<ul style="background-color: #1A1A1A;">
+    {% for ID,tarea,Status in tareas %}
+    {% if not Status %}
+    <li style="color:#F1F1F1;">{{ tarea }} - Por completar</li>
+    
+    {% else %}
+    <li style="color: #5C8F5C;"><del>{{ tarea }}</del> Completada </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+</body>
