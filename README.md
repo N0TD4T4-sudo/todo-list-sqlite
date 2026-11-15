@@ -1,17 +1,38 @@
-#To-do list
-##proyecto de aprendizaje
+# To-do list
 
-El proyecto es una to-do list la cual cuenta con 5 funciones las cuales se selecionan con numero del 1 al 5 y se usa el numero 6 para salir.
--Agrega tarea
--Ver tareas
--Cambiar estado ( completar tareas )
--Borrar tarea
--editar tarea (cambiar la descripcion)
+## Proyecto de aprendizaje
 
-Para ejecutalo se necesita tener python 3 
-El script crea una base de datos (sqlite) en la cual se guardan todas las tareas y si esta creada se usa esa.
- 
-Proyecto basico de aprendizaje 
+Es una to-do list con dos versiones: una web (Flask) y una de consola.
+
+En el navegador se pueden **ver** las tareas y **agregar** nuevas. En esta versión aún no se pueden completar tareas desde la web.
+
+La versión de consola tiene 5 funciones:
+- Agregar tarea
+- Ver tareas
+- Cambiar estado (completar tareas)
+- Borrar tarea
+- Editar tarea (cambiar la descripción)
+
+Para ejecutarlo se necesita tener Python 3. El script crea una base de datos (SQLite) donde se guardan todas las tareas, y si ya está creada, usa esa.
+
+## Cómo instalar
+
+```
+pip install -r requirements.txt
+```
+
+## Cómo usar
+
+Para iniciar la versión web se usa el comando:
+
+```
+python app.py
+```
+
+Con esto se entra por defecto a http://127.0.0.1:5000. Si no funciona el enlace, en la terminal aparecerá el enlace correspondiente. Todo se ejecuta de manera local.
+
+## Versión en consola
+
 ```
 python todo.py
 ```
